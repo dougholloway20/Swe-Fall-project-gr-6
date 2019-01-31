@@ -1,0 +1,14 @@
+Features:
+* Login Page
+* Employee Review Form
+* Database
+
+Employee Review Form: (Self and/or Peer?)
+* Info Section - Name, Position, ID#, Department, Manager/Supervisor
+* Ratings (1-5) - Communication/Listening Skills, Dependability, Productivity, Job Knowledge, Technical Skills,
+  Work Quality, Attitude, Attendance/Punctuality, Initiative, Creativity, Technical Skills, Cooperation
+* Short Answer - Accomplishments, Strengths Weaknesses, Suggested Training, Other Improvement Suggestions
+* Additional Metric Suggestion/Other Remarks
+
+Database:
+* Compare Employees Based On - Quarter, Individual over Time, Department, Position
