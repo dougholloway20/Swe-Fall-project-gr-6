@@ -12,3 +12,14 @@ Employee Review Form: (Self and/or Peer?)
 
 Database:
 * Compare Employees Based On - Quarter, Individual over Time, Department, Position
+
+The evaluation system will feature a component for data entry (Employee Review Form) and a database to store and query entries. Employees
+will interact with the data entry portion of the system to evaluate their peers and themselves while employers will be able to interact 
+with both the data entry and database components. The data entry component will contain four sections: an information section consisting 
+of Person Being Evaluated, Employee ID# (if self evaluating), Position, Department, Manager/Supervisor; a rating scale section to evaluate 
+levels of Communication/Listening Skills, Dependability, Productivity, Job Knowledge, Technical Skills, Work Quality, Attitude, Attendance/
+Punctuality, Initiative, Creativity, Technical Skills, Cooperation; a short answer section that will allow employees to provide brief
+statements about the person being evaluated in regards to Accomplishments, Strengths Weaknesses, Suggested Training, Other Improvement 
+Suggestions, and Other Remarks; and an optional custom evaluation metric section that will enable employees to suggest/implement an
+additional evaluation criteria in either a rating scale or short answer style. The database will then record these evaluation and query
+them for use by the employer based on query options such as Quarter, Individual over Time, Department, or Position.
