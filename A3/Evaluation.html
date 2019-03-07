@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evaluation Form</title>
+        <style>
+            textarea {
+                width: 500px;
+                height: 75px;
+                resize: none;
+            }
+        </style>
+        <script src=index.js></script>
+    </head>
+    <form name="Evaluation" action="/collectData" method="post">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            Employee Name: <input type="text" name="firstname"><br><br>
+            Department: <input list="departments">
+            <datalist id="departments">
+                <option value="Accounting">
+                <option value="Sales">
+                <option value="R&D">
+            </datalist>
+            Position: <input list="positions">
+            <datalist id="positions">
+                <option value="Manager">
+                <option value="Consultant">
+                <option value="Engineer">
+            </datalist>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Rate</legend>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <td>Quality of Work</td>
+                    <td><input type="radio" name="quality"></td>
+                    <td><input type="radio" name="quality"></td>
+                    <td><input type="radio" name="quality"></td>
+                    <td><input type="radio" name="quality"></td>
+                    <td><input type="radio" name="quality"></td>
+                </tr>
+                <tr>
+                    <td>Dependability</td>
+                    <td><input type="radio" name="dependability"></td>
+                    <td><input type="radio" name="dependability"></td>
+                    <td><input type="radio" name="dependability"></td>
+                    <td><input type="radio" name="dependability"></td>
+                    <td><input type="radio" name="dependability"></td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td><input type="radio" name="communication"></td>
+                    <td><input type="radio" name="communication"></td>
+                    <td><input type="radio" name="communication"></td>
+                    <td><input type="radio" name="communication"></td>
+                    <td><input type="radio" name="communication"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Short Answer</legend>
+            Strengths<br>
+            <textarea name="strengths">Enter Here</textarea><br>
+            Weaknesses<br>
+            <textarea name="weaknesses">Enter Here</textarea><br>
+            Comments & Concerns<br>
+            <textarea name="comments">Enter Here</textarea><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</html>
