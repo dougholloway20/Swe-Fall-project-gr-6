@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-up Page</title>
+        <style>
+            td{
+                width: 50%;
+                padding: 5px;
+            }
+            table{
+                width: 100%;
+            }
+            input{
+                width: 100%;
+            }
+            fieldset{
+                width: 75%;
+            }
+        </style>
+    </head>
+    <form name="Sign-up" action="" method="post">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="firstname"></td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                
+            </table>            
+        </fieldset>
+        <fieldset>
+            <legend>Login Credentials</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>Confirm Email</td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email"></td>
+                    <td><input type="email" name="cemail"></td>
+                </tr>
+               
+                <tr>
+                    <td>Password</td>
+                    <td>Confirm Password</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password"></td>
+                    <td><input type="password" name="cpassword"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Company Details</legend>
+            <table>
+                <tr>
+                    <td>Department</td>
+                    <td>Position</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="department"></td>
+                    <td><input type="text" name="position"></td>
+                </tr>
+            </table> 
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit" style="width:10%">
+    </form>
+</html>

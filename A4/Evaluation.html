@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evaluation Form</title>
+        <style>
+            textarea {
+                width: 500px;
+                height: 75px;
+                resize: none;
+            }
+        </style>
+    </head>
+    <form name="Evaluation" action="" method="post">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            Employee Name: <input type="text" name="firstname"><br><br>
+            Department: <input type="text" name="department">
+            Position: <input type="text" name="position">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Rate</legend>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <td>Quality of Work</td>
+                    <td><input type="radio" name="quality" value="1"></td>
+                    <td><input type="radio" name="quality" value="2"></td>
+                    <td><input type="radio" name="quality" value="3"></td>
+                    <td><input type="radio" name="quality" value="4"></td>
+                    <td><input type="radio" name="quality" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Dependability</td>
+                    <td><input type="radio" name="dependability" value="1"></td>
+                    <td><input type="radio" name="dependability" value="2"></td>
+                    <td><input type="radio" name="dependability" value="3"></td>
+                    <td><input type="radio" name="dependability" value="4"></td>
+                    <td><input type="radio" name="dependability" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td><input type="radio" name="communication" value="1"></td>
+                    <td><input type="radio" name="communication" value="2"></td>
+                    <td><input type="radio" name="communication" value="3"></td>
+                    <td><input type="radio" name="communication" value="4"></td>
+                    <td><input type="radio" name="communication" value="5"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Short Answer</legend>
+            Strengths<br>
+            <textarea name="strengths">Enter Here</textarea><br>
+            Weaknesses<br>
+            <textarea name="weaknesses">Enter Here</textarea><br>
+            Comments & Concerns<br>
+            <textarea name="comments">Enter Here</textarea><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</html>
