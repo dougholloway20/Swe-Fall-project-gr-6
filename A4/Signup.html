@@ -2,73 +2,59 @@
 <html>
     <head>
         <title>Sign-up Page</title>
-        <style>
-            td{
-                width: 50%;
-                padding: 5px;
-            }
-            table{
-                width: 100%;
-            }
-            input{
-                width: 100%;
-            }
-            fieldset{
-                width: 75%;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="Signup.css">
+        <script src="Signup.js"></script>
     </head>
-    <form name="Sign-up" action="" method="post">
-        <fieldset>
-            <legend>Personal Information:</legend>
-            <table>
-                <tr>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="firstname"></td>
-                    <td><input type="text" name="lastname"></td>
-                </tr>
-                
-            </table>            
-        </fieldset>
-        <fieldset>
-            <legend>Login Credentials</legend>
-            <table>
-                <tr>
-                    <td>Email</td>
-                    <td>Confirm Email</td>
-                </tr>
-                <tr>
-                    <td><input type="email" name="email"></td>
-                    <td><input type="email" name="cemail"></td>
-                </tr>
-               
-                <tr>
-                    <td>Password</td>
-                    <td>Confirm Password</td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="password"></td>
-                    <td><input type="password" name="cpassword"></td>
-                </tr>
-            </table>
-        </fieldset>
-        <fieldset>
-            <legend>Company Details</legend>
-            <table>
-                <tr>
-                    <td>Department</td>
-                    <td>Position</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="department"></td>
-                    <td><input type="text" name="position"></td>
-                </tr>
-            </table> 
-        </fieldset>
-        <br>
-        <input type="submit" value="Submit" style="width:10%">
-    </form>
+    <body>
+        <header>
+            <h1>Sign-up</h1>
+        </header>
+        <ul class="card">
+            <li><a href="#link1">Link 1</a></li>
+            <li><a href="#link2">Link 2</a></li>
+            <li><a href="#link3">Link 3</a></li>
+        </ul>
+        <div class="container">
+            <form name="Sign-up" action="" method="post">
+                <p id="missing"></p>
+                <fieldset class="card">
+                    <legend>PERSONAL INFORMATION</legend>
+                    <table>
+                        <tr>
+                            <td><input type="text" name="firstname" placeholder="First Name" required>
+                            <p></p></td>
+                            <td><input type="text" name="lastname" placeholder="Last Name" required>
+                            <p></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="department" placeholder="Department" required>
+                            <p></p></td>
+                            <td><input type="text" name="position" placeholder="Position" required>
+                            <p></p></td>
+                        </tr>
+                    </table>            
+                </fieldset>
+                <br>
+                <fieldset class="card">
+                    <legend>LOGIN CREDENTIALS</legend>
+                    <table>
+                        <tr>
+                            <td><input type="email" name="email" onfocusout="formatEmail()" placeholder="Email" required>
+                            <p></p></td>
+                            <td><input type="email" name="cemail" onfocusout="matchEmail()" placeholder="Confirm Email" required>
+                            <p id="emlMch"></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="password" onfocusout="formatPassword()" placeholder="Password" required>
+                            <p id="pwdFrmt"></p></td>
+                            <td><input type="password" name="cpassword" onfocusout="matchPassword()" placeholder="Confirm Password" required>
+                            <p id="pwdMch"></p></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <input class="card" type="submit" value="SIGNUP" onsubmit="return validateForm()">
+            </form>
+        </div>
+    </body>
 </html>
