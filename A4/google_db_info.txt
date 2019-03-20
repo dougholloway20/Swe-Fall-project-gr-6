@@ -1,0 +1,4 @@
+IP add: 104.196.56.178
+instance name: intense-talent-235122:us-east1:group6emp-eval
+username: root
+password: password
