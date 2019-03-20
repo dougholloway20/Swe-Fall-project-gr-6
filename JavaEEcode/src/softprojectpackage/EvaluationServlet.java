@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class EvaluationServlet
+ * Servlet implementation class EvaluationServlet fixed
  */
 
 public class EvaluationServlet extends HttpServlet {
