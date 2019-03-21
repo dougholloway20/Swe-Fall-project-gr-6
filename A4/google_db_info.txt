@@ -3,4 +3,9 @@ instance name: intense-talent-235122:us-east1:group6emp-eval
 username: root
 password: password
 
+ip add link:
 http://ipv4.whatismyv6.com/
+
+jdbc links:
+https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory
+https://github.com/GoogleCloudPlatform/java-docs-samples/tree/master/cloud-sql/mysql/servlet
