@@ -1,0 +1,58 @@
+CREATE TABLE `emp-review`.`users` (
+  `idusers` INT NOT NULL,
+  `email` VARCHAR(60) NULL,
+  `first_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `registration_date` VARCHAR(45) NULL,
+  `admin` INT NULL,
+  PRIMARY KEY (`idusers`));
+
+CREATE TABLE `emp-review`.`company` (
+  `idcompany` INT NOT NULL,
+  `company` VARCHAR(60) NULL,
+  `department` VARCHAR(60) NULL,
+  `position` VARCHAR(60) NULL,
+  `hire_date` DATETIME NULL,
+  PRIMARY KEY (`idcompany`),
+  CONSTRAINT `idcompany`
+    FOREIGN KEY (`idcompany`)
+    REFERENCES `emp-review`.`users` (`idusers`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `emp-review`.`forms` (
+  `idforms` INT NOT NULL,
+  PRIMARY KEY (`idforms`),
+  CONSTRAINT `idforms`
+    FOREIGN KEY (`idforms`)
+    REFERENCES `emp-review`.`users` (`idusers`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `emp-review`.`metrics` (
+  `idmetrics` INT NOT NULL,
+  `metric_num` INT NULL,
+  `question` MEDIUMTEXT NULL,
+  `response` INT NULL,
+  PRIMARY KEY (`idmetrics`),
+  CONSTRAINT `metid`
+    FOREIGN KEY (`idmetrics`)
+    REFERENCES `emp-review`.`forms` (`idforms`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+ALTER TABLE `emp-review`.`forms` 
+ADD COLUMN `met_review` INT NULL AFTER `idforms`,
+ADD COLUMN `overall_review` LONGTEXT NULL AFTER `met_review`;
+
+CREATE TABLE `emp-review`.`notes` (
+  `idnotes` INT NOT NULL,
+  `question` MEDIUMTEXT NULL,
+  `response` LONGTEXT NULL,
+  PRIMARY KEY (`idnotes`),
+  CONSTRAINT `noteid`
+    FOREIGN KEY (`idnotes`)
+    REFERENCES `emp-review`.`forms` (`idforms`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
