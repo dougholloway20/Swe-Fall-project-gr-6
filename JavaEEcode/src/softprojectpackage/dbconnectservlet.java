@@ -10,11 +10,11 @@ public class dbconnectservlet {
 		// Initialize all the information regarding 
 		// Database Connection 
 		String dbDriver = "com.mysql.jdbc.Driver"; 
-		String dbURL = "jdbc:mysql://104.196.56.178:3306/"; 
+		String dbURL = "jdbc:mysql://local-host:3306/"; 
 		// Database name to access 
-		String dbName = "group6emp-eval"; 
+		String dbName = "SWEproject"; 
 		String dbUsername = "root"; 
-		String dbPassword = "password"; 
+		String dbPassword = "cowboys13"; 
 
 		Class.forName(dbDriver); 
 		Connection con = DriverManager.getConnection(dbURL + dbName, 
