@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="newEval.js"></script>
+    <link rel="stylesheet" type="text/css" href="formCreate.css">
+  </head>
+
+  <body>
+      <header class="card">
+          <h1>Create Evaluation</h1>
+          <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="homepage.html">Logout</a></li>
+          </ul>
+      </header>
+      <div class="container">
+    <form id="form1" class="">
+
+      <label for="rating-style-select">How Many Rating Style Questions?</label> <br>
+      <select id="rating-style-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select> <br> <br>
+
+      <label for="shortAnswer-style-select">How Many Short Answer Questions?</label> <br>
+      <select id="shortAnswer-style-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select> <br> <br>
+
+      <input type="submit" name="" value="Generate" onclick="numberOfQuestions()">
+    </form>
+    </div>
+  </body>
+</html>
